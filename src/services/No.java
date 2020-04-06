@@ -2,7 +2,12 @@ package services;
 
 public class No {
     private int ID;
-    private No ant;
+    private No proximo;
+
+    public No(int ID){
+       this.ID = ID;
+       this.proximo = null;
+   }
 
     //retorna ID (valor) do nó
     public int getID() {
@@ -15,12 +20,12 @@ public class No {
     }
 
     //retorna nó anterior
-    public No getAnt() {
-        return ant;
+    public No getProximo() {
+        return proximo;
     }
 
     //define nó anterior
-    public void setAnt(No ant) {
-        this.ant = ant;
+    public void setProximo(No prox) {
+        this.proximo = prox;
     }   
 }

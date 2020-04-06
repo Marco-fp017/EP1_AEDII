@@ -1,11 +1,11 @@
 package entities;
 
-import services.Pilha;
+import services.PilhaDinamica;
 
-public class Localidades extends Pilha{
+public class Localidades extends PilhaDinamica{
     private int coordenada_x;
     private int coordenada_y;
-    Pilha pilha = new Pilha();
+    PilhaDinamica pilha = new PilhaDinamica();
     
     public Localidades(int coordenada_x, int coordenada_y) {
         this.coordenada_x = coordenada_x;
