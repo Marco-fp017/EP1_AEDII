@@ -1,21 +1,21 @@
 package services;
 
 public class No {
-    private int ID;
+    private long ID;
     private No proximo;
 
-    public No(int ID){
+    public No(long ID){
        this.ID = ID;
        this.proximo = null;
    }
 
     //retorna ID (valor) do nó
-    public int getID() {
+    public long getID() {
         return ID;
     }
     
     //define ID (valor) do nó
-    public void setID(int ID) {
+    public void setID(long ID) {
         this.ID = ID;
     }
 
