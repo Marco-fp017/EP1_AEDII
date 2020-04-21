@@ -85,12 +85,12 @@ public class EP1_AED_II {
 
             System.out.print("Informe o caminha completo de saída do arquivo: ");
             try(BufferedWriter bw = new BufferedWriter(new FileWriter(sc.nextLine()))){
-                
+                bw.write("Coordenada_x,Coordenada_y,Frequentadores");
+                bw.newLine();
                 for (Localidades l : localidades){
-                    bw.write(l.getCoordenada_x() + ", " + l.getCoordenada_y() + ": " + l.tamanhoPilha());
+                    bw.write(l.getCoordenada_x() + "," + l.getCoordenada_y() + "," + l.tamanhoPilha());
 //                    bw.write(l.getCoordenada_x() + ", " + l.getCoordenada_y() + ": " + l.imprimirPilha2());
                     bw.newLine();
-//                    System.out.print(l.getCoordenada_x() + ", " + l.getCoordenada_y() + ": " + l.imprimirPilha2());
                 }
             }catch (IOException e){
                 e.getMessage();
